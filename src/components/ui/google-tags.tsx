@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 // Define a more specific type for dataLayer
 interface DataLayerEvent {
   event: string; // 'event' is required
-  [key: string]: any; // This allows additional dynamic properties
+  [key: string]: unknown; // Use 'unknown' instead of 'any' for dynamic properties
 }
 
 // Declare the global types for window

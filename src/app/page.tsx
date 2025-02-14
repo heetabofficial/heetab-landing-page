@@ -1,3 +1,4 @@
+import { Blog } from "@/components/ui/blogs";
 import { FAQ } from "@/components/ui/FAQ";
 import { Footer } from "@/components/ui/Footer";
 import { Header } from "@/components/ui/Header";
@@ -15,6 +16,7 @@ export default function Home() {
         <Case />
         <Stats />
         <FAQ />
+        <Blog />
         <Footer />
       </div>
     </main>
