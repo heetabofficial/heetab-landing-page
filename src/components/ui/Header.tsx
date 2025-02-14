@@ -1,5 +1,6 @@
 "use client";
 
+import { ModeToggle } from "@/components/ui/MToggle";
 import { Button } from "@/components/ui/button";
 import {
 NavigationMenu,
@@ -130,6 +131,7 @@ return (
         <div className="border-r hidden md:inline"></div>
         <Button variant="outline">Sign in</Button>
         <Button>Get started</Button>
+        <ModeToggle />
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
         <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
