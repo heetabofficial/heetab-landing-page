@@ -1,5 +1,5 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
+import { MoveRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const Blog = () => (
   <div className="w-full py-20 lg:py-40">
@@ -8,82 +8,42 @@ export const Blog = () => (
         <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular">
           Latest articles
         </h4>
+        <Button className="gap-4">
+          View all articles <MoveRight className="w-4 h-4" />
+        </Button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex flex-col gap-4 hover:opacity-75 cursor-pointer md:col-span-2">
-          <div className="bg-muted rounded-md aspect-video"></div>
-          <div className="flex flex-row gap-4 items-center">
-            <Badge>News</Badge>
-            <p className="flex flex-row gap-2 text-sm items-center">
-              <span className="text-muted-foreground">By</span>{" "}
-              <Avatar className="h-6 w-6">
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <span>John Johnsen</span>
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h3 className="max-w-3xl text-4xl tracking-tight">
-              Pay supplier invoices
-            </h3>
-            <p className="max-w-3xl text-muted-foreground text-base">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
-            </p>
-          </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col gap-2 hover:opacity-75 cursor-pointer">
+          <div className="bg-muted rounded-md aspect-video mb-4"></div>
+          <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
+          <p className="text-muted-foreground text-base">
+            Our goal is to streamline SMB trade, making it easier and faster
+            than ever.
+          </p>
         </div>
-        <div className="flex flex-col gap-4 hover:opacity-75 cursor-pointer">
-          <div className="bg-muted rounded-md aspect-video"></div>
-          <div className="flex flex-row gap-4 items-center">
-            <Badge>News</Badge>
-            <p className="flex flex-row gap-2 text-sm items-center">
-              <span className="text-muted-foreground">By</span>{" "}
-              <Avatar className="h-6 w-6">
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <span>John Johnsen</span>
-            </p>
-          </div>
-          <div className="flex flex-col gap-1">
-            <h3 className="max-w-3xl text-2xl tracking-tight">
-              Pay supplier invoices
-            </h3>
-            <p className="max-w-3xl text-muted-foreground text-base">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
-            </p>
-          </div>
+        <div className="flex flex-col gap-2 hover:opacity-75 cursor-pointer">
+          <div className="bg-muted rounded-md aspect-video mb-4"></div>
+          <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
+          <p className="text-muted-foreground text-base">
+            Our goal is to streamline SMB trade, making it easier and faster
+            than ever.
+          </p>
         </div>
-        <div className="flex flex-col gap-4 hover:opacity-75 cursor-pointer">
-          <div className="bg-muted rounded-md aspect-video"></div>
-          <div className="flex flex-row gap-4 items-center">
-            <Badge>News</Badge>
-            <p className="flex flex-row gap-2 text-sm items-center">
-              <span className="text-muted-foreground">By</span>{" "}
-              <Avatar className="h-6 w-6">
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <span>John Johnsen</span>
-            </p>
-          </div>
-          <div className="flex flex-col gap-1">
-            <h3 className="max-w-3xl text-2xl tracking-tight">
-              Pay supplier invoices
-            </h3>
-            <p className="max-w-3xl text-muted-foreground text-base">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
-            </p>
-          </div>
+        <div className="flex flex-col gap-2 hover:opacity-75 cursor-pointer">
+          <div className="bg-muted rounded-md aspect-video mb-4"></div>
+          <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
+          <p className="text-muted-foreground text-base">
+            Our goal is to streamline SMB trade, making it easier and faster
+            than ever.
+          </p>
+        </div>
+        <div className="flex flex-col gap-2 hover:opacity-75 cursor-pointer">
+          <div className="bg-muted rounded-md aspect-video mb-4"></div>
+          <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
+          <p className="text-muted-foreground text-base">
+            Our goal is to streamline SMB trade, making it easier and faster
+            than ever.
+          </p>
         </div>
       </div>
     </div>
