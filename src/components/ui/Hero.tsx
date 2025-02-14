@@ -64,10 +64,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+              We are here to help building SaaS products that help businesses grow and we will create Graphics which will attract your customers.
             </p>
           </div>
           <div className="flex flex-row gap-3">
