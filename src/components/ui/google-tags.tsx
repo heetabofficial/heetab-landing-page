@@ -1,11 +1,18 @@
-"use client";
+'use client'; // Mark this as a client-side component
 
 import React, { useEffect } from 'react';
 
+// Define a more specific type for dataLayer
+interface DataLayerEvent {
+  event: string; // 'event' is required
+  [key: string]: any; // This allows additional dynamic properties
+}
+
+// Declare the global types for window
 declare global {
   interface Window {
-    dataLayer: any[];
-    gtag: (...args: any[]) => void;
+    dataLayer: DataLayerEvent[];
+    gtag: (...args: DataLayerEvent[]) => void; // gtag expects an array of DataLayerEvent objects
   }
 }
 
@@ -18,11 +25,17 @@ const GoogleAnalytics: React.FC = () => {
 
     script.onload = () => {
       window.dataLayer = window.dataLayer || [];
-      window.gtag = function() {
-        window.dataLayer.push(arguments);
+
+      // Implement gtag to accept a single DataLayerEvent or multiple
+      window.gtag = (...args: DataLayerEvent[]) => {
+        args.forEach(event => {
+          window.dataLayer.push(event);
+        });
       };
-      window.gtag('js', new Date());
-      window.gtag('config', 'G-EZDPF9KV1N');
+
+      // Call the gtag function with required event data
+      window.gtag({ event: 'js', timestamp: new Date() });
+      window.gtag({ event: 'config', tracking_id: 'G-EZDPF9KV1N' });
     };
 
     return () => {
