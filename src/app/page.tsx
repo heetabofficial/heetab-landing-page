@@ -8,6 +8,7 @@ import { Case } from "@/components/ui/testimonila";
 export default function Home() {
   return (
     <main>
+      <div></div>
       <div>
         <Header />
         <Hero />
