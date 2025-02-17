@@ -14,9 +14,7 @@ export const CTA = () => (
             Try our platform today!
           </h3>
           <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl">
-            Managing a small business today is already tough. Avoid further
-            complications by ditching outdated, tedious trade methods. Our goal
-            is to streamline SMB trade, making it easier and faster than ever.
+            Managing and building a small business SaaS is already challenging. Avoid unnecessary complications by moving away from outdated systems. We are here to streamline the process, making it easier and faster than ever before.
           </p>
         </div>
         <div className="flex flex-row gap-4">
