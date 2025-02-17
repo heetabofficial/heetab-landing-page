@@ -17,32 +17,28 @@ export const Blog = () => (
           <div className="bg-muted rounded-md aspect-video mb-4"></div>
           <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
           <p className="text-muted-foreground text-base">
-            Our goal is to streamline SMB trade, making it easier and faster
-            than ever.
+            Managing and building a small business SaaS is already challenging. Avoid unnecessary complications by moving away from outdated systems. We are here to streamline the process, making it easier and faster than ever before.
           </p>
         </div>
         <div className="flex flex-col gap-2 hover:opacity-75 cursor-pointer">
           <div className="bg-muted rounded-md aspect-video mb-4"></div>
           <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
           <p className="text-muted-foreground text-base">
-            Our goal is to streamline SMB trade, making it easier and faster
-            than ever.
+            Managing and building a small business SaaS is already challenging. Avoid unnecessary complications by moving away from outdated systems. We are here to streamline the process, making it easier and faster than ever before.
           </p>
         </div>
         <div className="flex flex-col gap-2 hover:opacity-75 cursor-pointer">
           <div className="bg-muted rounded-md aspect-video mb-4"></div>
           <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
           <p className="text-muted-foreground text-base">
-            Our goal is to streamline SMB trade, making it easier and faster
-            than ever.
+            Managing and building a small business SaaS is already challenging. Avoid unnecessary complications by moving away from outdated systems. We are here to streamline the process, making it easier and faster than ever before.
           </p>
         </div>
         <div className="flex flex-col gap-2 hover:opacity-75 cursor-pointer">
           <div className="bg-muted rounded-md aspect-video mb-4"></div>
           <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
           <p className="text-muted-foreground text-base">
-            Our goal is to streamline SMB trade, making it easier and faster
-            than ever.
+            Managing and building a small business SaaS is already challenging. Avoid unnecessary complications by moving away from outdated systems. We are here to streamline the process, making it easier and faster than ever before.
           </p>
         </div>
       </div>
